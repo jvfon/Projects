@@ -31,7 +31,7 @@
             } 
         } */
 
-        function runIt() {
+        /* function runIt() {
             var str = "This is it!";
             var result = str.indexOf("h");
             console.log(result);
@@ -44,16 +44,27 @@
                 console.log(false);
             }
 
+        } */
+
+        function doItAgain() {
+            var loopCount = 5;
+            while(loopCount > 0) {
+
+                console.log("loopCount is now: " + loopCount);
+                loopCount = loopCount -1;
+            }
+            console.log("End loop");
         }
+
     </script>
 </head>
 <body>
     <h1>Jose Fon Portfolio</h1>
     <h2>About</h2>
 
-    <button id="activator" type="button">Activate it!</button>
+    <input type="button" id="looper" value="Do it again">
 
-    <p id="first">Vel ut omittam suscipiantur. Qui conceptam 
+    <p id="target">Vel ut omittam suscipiantur. Qui conceptam 
         inciderint et. Vix et vidit temporibus, elitr malorum 
         delectus at ius. Usu velit perpetua ea, mea lorem ornatus 
         fabellas eu, at omnis commodo nam. Aeterno verterem quo eu. 
@@ -61,11 +72,12 @@
         qualisque, vel ex regione accusata.</p>
 
     <H2>Projects</h2>
-
+ 
     <script>
-        document.getElementById("activator").onclick = function() {
-            runIt();
-        }    
-    </script>    
+         document.getElementById("looper").onclick=function(){
+             doItAgain();
+             this.style.color="red";
+         }
+    </script>     
 </body>
 </html>
