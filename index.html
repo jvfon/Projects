@@ -44,7 +44,7 @@
                 console.log(false);
             }
 
-        } */
+        } 
 
         function doItAgain() {
             var loopCount = 5;
@@ -54,6 +54,20 @@
                 loopCount = loopCount -1;
             }
             console.log("End loop");
+        } */
+
+        function doItAgain() {
+            var loopCount = 5 ;
+            while(loopCount > 0) {
+                
+                var target = document.getElementById("target");
+                target.innerHTML="loopCourt: " +loopCount + "<br>" + target.innerHTML;
+                console.log("loopCount is now: " + loopCount);
+                loopCount = loopCount -1;
+            }
+            console.log("End loop");
+            var button = document.getElementById("looper");
+            button.value = "Done looping!";
         }
 
     </script>
