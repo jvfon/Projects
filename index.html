@@ -57,13 +57,12 @@
         } */
 
         function doItAgain() {
-            var loopCount = 5 ;
-            while(loopCount > 0) {
+            for (var i = 10; i >= 0; i--){
                 
                 var target = document.getElementById("target");
-                target.innerHTML="loopCourt: " +loopCount + "<br>" + target.innerHTML;
-                console.log("loopCount is now: " + loopCount);
-                loopCount = loopCount -1;
+                target.innerHTML="loopCourt: " + i + "<br>" + target.innerHTML;
+                console.log("loopCount is now: " + i);
+                
             }
             console.log("End loop");
             var button = document.getElementById("looper");
