@@ -1,6 +1,7 @@
 body {
     background-image: url(img/background.jpg);
-    background-image: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 75%;
     color: grey;
     align: center;
