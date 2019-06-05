@@ -2,11 +2,12 @@ body {
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 75%;
     color: grey;
     align: center;
 }
 .name, .title {
     text-align: center;
-    color: black;
+    color: lightgray;
 }
