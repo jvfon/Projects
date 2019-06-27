@@ -1,14 +1,5 @@
-/*body {
-    background-image: url(img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 75%;
-    color: grey;
-    align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
-.name, .title {
-    text-align: center;
-    color: lightgray;
-} */
 
