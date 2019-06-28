@@ -1,5 +1,109 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: "Lato" sans-serif;
+    font-weight: 400;   
+    font-size: 16px;
+    line-height: 1.7;
+    color: #fff;
+    padding: 30px;    
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 86, 143, 0.9), rgba(0, 0, 0, 0.90)), url("../img/colorChart.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: capitalize;
+    backface-visibility: hidden;
+    margin-bottom: 85px;
+}
+
+.heading-name {
+    display: block;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 30px;
+    animation: leftRight 1s ease-out; 
+}
+
+.portfolio {
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 30px;
+    animation: rightLeft 1s ease-out; 
+}
+
+@keyframes leftRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rightLeft {
+    0% {
+        opacity: 0;
+        transform: translate(100px);
+    }
+    80% {
+        transform: translateX(-10px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.btn:link, .btn:visited {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
