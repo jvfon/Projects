@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Lato" sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;   
     font-size: 16px;
     line-height: 1.7;
@@ -34,10 +34,10 @@ body {
     color: #fff;
     text-transform: capitalize;
     backface-visibility: hidden;
-    margin-bottom: 85px;
+    margin-top: 40px;
 }
 
-.heading-name {
+.heading-1 {
     display: block;
     font-size: 45px;
     font-weight: 400;
@@ -45,12 +45,20 @@ body {
     animation: leftRight 1s ease-out; 
 }
 
+.heading-2 {
+    display: block;
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    animation: rightLeft 1s ease-out; 
+}
+
 .portfolio {
     display: block;
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 30px;
-    animation: rightLeft 1s ease-out; 
+    animation: leftRight 1s ease-out; 
 }
 
 @keyframes leftRight {
@@ -101,6 +109,7 @@ body {
     border-radius: 100px;
     transition: all .2s;
     position: relative;
+    margin: 40px; 
 }
 
 .btn-white {
