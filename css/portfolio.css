@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    /* font-weight: 400;   */
+    /*font-family: "Lato", sans-serif;*/
+    /* font-weight: 400;  */
     font-size: 16px;
     line-height: 1.7;
     color: #fff;
@@ -35,31 +35,31 @@ body {
     text-transform: capitalize;
     backface-visibility: hidden;
     margin-top: 40px;
-    
+    font-family: "Raleway";
 }
 
 .heading-1 {
     display: block;
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 100;
     letter-spacing: 40px;
     animation: leftRight 1s ease-out; 
-   
+    
 }
 
 .heading-2 {
     display: block;
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 15px;
     animation: rightLeft 1s ease-out; 
-   
+    
 }
 
 .portfolio {
     display: block;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 40px;
     animation: leftRight 1s ease-out; 
     
