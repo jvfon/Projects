@@ -5,8 +5,8 @@
 }
 
 body {
-    /*font-family: "Lato", sans-serif;*/
-    /* font-weight: 400;  */
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;  
     font-size: 16px;
     line-height: 1.7;
     color: #fff;
@@ -35,7 +35,7 @@ body {
     text-transform: capitalize;
     backface-visibility: hidden;
     margin-top: 40px;
-    font-family: "Raleway";
+    
 }
 
 .heading-1 {
@@ -43,7 +43,8 @@ body {
     font-size: 50px;
     font-weight: 100;
     letter-spacing: 40px;
-    animation: leftRight 1s ease-out; 
+    animation: topBottom 1s ease-out; 
+    transition: all 1s;
     
 }
 
@@ -64,6 +65,17 @@ body {
     animation: leftRight 1s ease-out; 
     
    
+}
+
+@keyframes topBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes leftRight {
