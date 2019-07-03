@@ -19,7 +19,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .text-box {
@@ -34,7 +34,7 @@ body {
     color: #fff;
     text-transform: capitalize;
     backface-visibility: hidden;
-    margin-top: 40px;
+    margin-top: 60px;
     
 }
 
@@ -121,12 +121,12 @@ body {
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 13px 20px;
+    padding: 10px 10px;
     display: inline-block;
     border-radius: 100px;
     transition: all .2s;
     position: relative;
-    margin: 30px 5px; 
+    margin: 20px 2px; 
 }
 
 .btn-white {
