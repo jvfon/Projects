@@ -15,7 +15,7 @@ body {
 
 .header {
     height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba(0, 86, 143, 0.9), rgba(0, 0, 0, 0.90)), url("../img/background.jpg");
+    background-image: linear-gradient(to right bottom, rgba(0, 86, 143, 0.9), rgba(0, 0, 0, 0.90))/*, url("../img/background.jpg")*/;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -43,7 +43,8 @@ body {
     font-size: 50px;
     font-weight: 100;
     letter-spacing: 40px;
-    animation: appear 2s ease-out;
+    animation: appear 3s ease-out;
+    
     /* transition: all 1s; */
     
 }
@@ -71,8 +72,14 @@ body {
     0% {
         opacity: 0;
     }
+    25% {
+        opacity: 0.3;
+    }
     50% {
         opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
     }
     100% {
         opacity: 1;
