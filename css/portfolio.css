@@ -6,7 +6,7 @@
 
 body {
     font-family: "Raleway", sans-serif;
-    font-weight: 400;  
+    /*font-weight: 400;   */
     font-size: 16px;
     line-height: 1.7;
     color: #fff;
@@ -64,6 +64,7 @@ body {
     font-weight: 900;
     letter-spacing: 40px;
     animation: extrabold 1s ease-out;
+    color: rgb(180, 180, 180);
     
    
 }
@@ -139,12 +140,22 @@ body {
 @keyframes extrabold {
     0% {
         font-weight: 100;
+        opacity: 0;
+    }
+    35% {
+        font-weight: 300;
+        opacity: 0.5;
     }
     50% {
-        font-weight: 500;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+    80% {
+        font-weight: 700;
+        color: rgb(255, 255, 255);
     }
     100% {
-        font-weight: 900;
+        font-weight: 100%;
     }
 }
 
