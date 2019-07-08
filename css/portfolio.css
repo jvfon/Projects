@@ -65,10 +65,14 @@ body {
     font-weight: 900;
     letter-spacing: 40px;
     animation: extrabold 1s ease-out;
-    color: rgb(180, 180, 180);
-    
-   
+    color: rgb(180, 180, 180);  
 }
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
 
 @keyframes appear {
     0% {
@@ -163,7 +167,7 @@ body {
         transform: translateY(0);
     }
 }
-/*
+
 .btn:link, .btn:visited {
     font-size: 20px;
     text-decoration: none;
@@ -178,6 +182,12 @@ body {
 
 .btn-white {
     background-color: #fff;
+    color: #000;
+    font-weight: 900;
+}
+
+.btn-darker {
+    background-color: rgb(180, 180, 180);  
     color: #000;
     font-weight: 900;
 }
