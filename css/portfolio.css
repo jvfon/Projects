@@ -14,6 +14,11 @@ img {
     height: auto;
 }
 
+.logo {
+    width: 20%;
+    height: auto;
+} 
+
 .container {
     width: 95%; /* for mobile, keeps the text from touching the side of the screen */
     height: auto;
@@ -22,7 +27,8 @@ img {
 /* typography */
 .title {
     font-size: 2.5rem;
-    color: #ddd
+    color: #ddd;
+    margin-bottom: 1.5em;
 }
 
 .title span {
@@ -32,6 +38,45 @@ img {
     color: #ddd
 }
 
+@media (min-width: 60rem) { /* when the screen size reaches 60rem something will happens */
+    .title {
+        font-size: 3.7rem;
+    }
+}
+
+/* buttons */
+.button {
+    display: inline-block; /* so padding ads to the height of the button,
+                            otherwise the button and above content overlap */
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em; /* scales in relation to font size */
+    background-color: #fff;
+    color: #000;
+}
+
+.button-accent {
+    
+    border-color: #fff; /* so the border stays that color when you hover */
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background-color: #fff;
+    color: #000;
+    font-weight: 800;
+}
+
+@media (min-width: 60rem) { /* when the screen size reaches 60rem something will happens */
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
 /* header */
 header {
     position: absolute; /* moves the nav bar on top of the background */
@@ -39,13 +84,13 @@ header {
         /* you can fix it with "width: 100%" or left and right: 0 */
     left: 0; /* centers the nav bar */
     right: 0;  /* centers the nav bar */
-    margin-top: 1em;
+    margin: 1em;  /* helpful when .nav and .logo float right and left */ 
 }
 
 nav ul {
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style: none; 
 }
 
 nav li {
@@ -59,14 +104,33 @@ nav a {
     text-transform: uppercase; /* remove the underline */
     font-size: .8rem;
     padding: .5em; /* give more space to click */
-    
     color: #fff;
 }
 
-/* home hero */
+@media (min-width: 60rem) { /* when the screen size reaches 60rem something will happens */
+     .logo {
+        float: left;
+        width: 10%; /* if your logo is big, this will keep it small */
+    } 
+
+     nav {
+        float: right;
+    }
+} 
+
+/* home hero */ 
 .home-hero {
-    background-image: url(/img/background-dark.jpg);
+    background-image: url(/img/background-dark.jpg); 
+    background-size: cover;
+    background-position: top;
     padding: 10em;
+}
+
+@media (min-width: 60rem) { /* when the screen size reaches 60rem something will happens */
+    .home-hero {
+        height: 100vh; /* viewport height, the background will be the size of the screen */
+        padding-top: 35vh; /* to place the tittle closer to the center */
+    }
 }
 
 nav a:hover,
