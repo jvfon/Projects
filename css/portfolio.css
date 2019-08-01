@@ -30,21 +30,21 @@ img {
 .title {
     font-size: 3.5rem; 
     color: #ddd;
-    /* margin-bottom: 1.5em; */
+     margin-bottom: 1.5em; 
 }  
 
- /*.title span {
+ .title span {
     font-weight: 300;
-    display: block; /* so it stay on a line 
+    display: block; /* so it stay on a line  */
     font-size: .9em;
     color: #ddd
-} */
+} 
 
- /* @media (min-width: 60rem) { /*  when the screen size reaches 60rem something will happens */
-   /* .title {
+@media (min-width: 60rem) { /*  when the screen size reaches 60rem something will happens */
+    .title {
         font-size: 3.7rem;
     }
-} */
+} 
 
 /* buttons */
 .button {
