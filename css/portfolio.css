@@ -46,6 +46,7 @@ img {
 @media (min-width: 60rem) { /*  when the screen size reaches 60rem something will happens */
     .title {
         font-size: 5rem;
+        
     }
 } 
 
@@ -132,7 +133,7 @@ nav a {
 
 /* home hero */ 
 .home-hero {
-    background-image: url(/img/background-dark.jpg); 
+    background-image: url(/img/bridge.jpg); 
     background-size: cover;
     background-position: top;
     padding: 10em;
