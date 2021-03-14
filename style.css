@@ -42,7 +42,19 @@ table {
 	border-spacing: 0;
 }
 
+/* Nav */
+.navbar {
+    background: lightcoral;
+    display: flex;
+}
 
+.navbar-logo {
+    
+}
+
+.navbar-shortcuts {
+    
+}
 
 
 
