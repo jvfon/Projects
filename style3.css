@@ -7,6 +7,29 @@ section {
 .hero {
     background-color: #1c1d25;
     height: 100vh; /* the hero section will be as tall as any browswer it will be viewed in */ 
+    color: white;
+    font-size: 40px;
+}
+
+nav {
+    display: flex; /* Makes the logo and shortcuts appear on the same level */
+    justify-content: space-between; /* Moves the logo to the left side and contacts to the right side */
+}
+
+ul {
+    display: flex; /* Makes all the shortcuts to be on the smae level */
+    list-style-type: none; /* removes the dots from ul */
+
+    /* Makes the shortcuts have the same space around them */
+    width: 500px;
+    justify-content: space-around; 
+
+}
+
+li {
+    /* width: 200px; */
+    text-decoration: none;
+    font-size: 30px;
 }
 
 footer {
