@@ -1,0 +1,19 @@
+section {
+    height: 500px;
+    background-color: white;
+    border: black solid 1px;
+}
+
+.hero {
+    background-color: #1c1d25;
+    height: 100vh; /* the hero section will be as tall as any browswer it will be viewed in */ 
+}
+
+footer {
+    height: 500px;
+    
+    background-color: black;
+}
+
+
+
