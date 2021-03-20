@@ -3,9 +3,9 @@ body {
 }
 
 section {
-    height: 500px;
+    /* height: 500px; */ /* removed so the height will auto adjust with the content */
     background-color: white;
-    border: black solid 1px;
+    /* border: black solid 1px; */
 }
 
 .hero {
@@ -42,9 +42,18 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 50px;
+}
+
 p {
     margin: 0;
     font-size: 30px;
+    font-weight: 300;
+}
+
+.subtext {
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -103,3 +112,50 @@ footer {
     margin: 30px; 
 }
 
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative  {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    padding: 80px;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px; /* make the photo look like a circle */ 
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    /* border: 1px solid black; */
+    box-shadow: 5px 5px 20px rgb(172, 172, 172);
+    margin: 10px; 
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    /* height: 250px; */
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
