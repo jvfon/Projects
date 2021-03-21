@@ -15,16 +15,16 @@
         <nav>
             <img class="logo" src="images/logo2.png" alt="logo">
             <ul>
-                <li>About me</li>
-                <li>Projects</li>
-                <li>Contact me</li>
+                <li> <a href="#about-me">About me</a> </li>
+                <li> <a href="#projects">Projects</a> </li>
+                <li> <a href="#contact-me">Contact me</a> </li>
             </ul>
         </nav>
         <div class="hero-area"> <!-- to keep hero-text on the center of the page -->
             <div class="hero-text">
                 <h1>Jose Fon</h1>
                 <p>Shopify Developer</p>    
-                <div class="button">About me</div>
+                <div class="button"> <a href="#about-me">About me</a> </div>
             </div>
             <div class="socials">
                 <!-- twitter logo from iconmoster embeded -->
@@ -52,7 +52,7 @@
             </a>
         </div>
     </section>
-    <section class="sub-section">
+    <section class="sub-section" id="about-me">
         <div class="information">
             <h2>About Me</h2>
                 <p>Hello, my name is Jose Fon. I am a Shopify devloper with a passion for design.
@@ -62,7 +62,7 @@
             <img class="headshot" src="images/northwest.jpg" alt="">
         </div>
     </section>
-    <section class="sub-section-alternative">
+    <section class="sub-section-alternative" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
             <div class="project-card">
@@ -70,32 +70,35 @@
                 <h3>Project One</h3>
                 <p class="subtext">This is my project. Some description goes here.</p>
                 <hr/>
-                <p class="subtext"> <a href="#">View here</a></p>
+                <p class="subtext"> <a class="project-link" href="#">View here</a></p>
             </div>
             <div class="project-card">
                 <img class="project-image" src="images/shoes.jpg" alt="Project One image">
                 <h3>Project Two</h3>
                 <p class="subtext">This is my project. Some description goes here.</p>
                 <hr/>
-                <p class="subtext"><a href="#">View here</a></p>
+                <p class="subtext"><a class="project-link" href="#">View here</a></p>
             </div>
             <div class="project-card">
                 <img class="project-image" src="images/vintge-car.jpeg" alt="Project One image">
                 <h3>Project Three</h3>
                 <p class="subtext">This is my project. Some description goes here.</p>
                 <hr/>
-                <p class="subtext"><a href="#">View here</a></p>
+                <p class="subtext"><a class="project-link" href="#">View here</a></p>
             </div>
             <div class="project-card">
                 <img class="project-image" src="images/water.jpg" alt="Project One image">
                 <h3>Project Four</h3>
                 <p class="subtext">This is my project. Some description goes here.</p>
                 <hr/>
-                <p class="subtext"><a href="#">View here</a></p>
+                <p class="subtext"><a class="project-link" href="#">View here</a></p>
             </div>
         </div>
     </section>
-    <footer></footer>
+    <footer id="contact-me">
+        <h2>Contact me</h2>
+        <p>emailaddress@gmail.com</p>
+    </footer>
     
     <script src="src/app3.js"></script>
 </body>

@@ -95,8 +95,8 @@ p {
 
 footer {
     height: 500px;
-    
     background-color: black;
+    color: white;
 }
 
 .socials {
@@ -150,12 +150,22 @@ footer {
 
 .project-image {
     margin-top: 25px;
-    width: 250px;
-    /* height: 250px; */
-    border-radius: 125px;
+    width: 60%;
+    height: 60%;
+    border-radius: 50px;
 }
 
 hr {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
