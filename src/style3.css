@@ -94,9 +94,10 @@ p {
 }
 
 footer {
-    height: 500px;
     background-color: black;
     color: white;
+    text-align: center;
+    padding: 80px;
 }
 
 .socials {
@@ -148,9 +149,16 @@ footer {
     justify-content: space-around;
 }
 
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 .project-image {
     margin-top: 25px;
-    width: 60%;
+    width: 80%;
     height: 60%;
     border-radius: 50px;
 }
@@ -169,3 +177,53 @@ a {
     text-decoration: none;
     color: white;
 }
+
+/* the hamburger menu is not shown until the max-width of the browser reaches 1000px */
+/* the menu links will disapear when the browser shrinks less than 1000px; */
+.hamburger {
+    display: none; 
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block; 
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end; /* moves the hamburger to the left side */
+    }
+
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse; /* moves the hamburger to the left side */
+        background-color: #2b2c38;
+
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
